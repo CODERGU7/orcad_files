@@ -1,0 +1,6 @@
+* source COMMON BASE
+V_VCC         N01636 0 0Vdc
+Q_Q3         VCB 0 N01529 Q2N2222
+R_R5         N01529 N01606  100k  
+R_R6         N01636 VCB  10k  
+V_VEE         0 N01606 0Vdc

@@ -1,0 +1,46 @@
+
+**** 10/01/20 20:24:46 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-CV"  [ D:\ae\ass-SCHEMATIC1-CV.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ass-SCHEMATIC1-CV.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 40ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\ass-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING ass-SCHEMATIC1.net ****
+* source ASS
+D_D1         N00937 N00832 Dbreak 
+D_D2         N00832 N00354 Dbreak 
+R_R1         N00354 N00937  1k  
+C_C3         N00354 N00937  47uF  
+C_C4         N00243 N00832  47uF  
+V_V1         N00243 N00354  
++SIN 0 10 50 0 0 0
+
+**** RESUMING ass-SCHEMATIC1-CV.sim.cir ****
+.END
+
+ERROR -- Node N00937 is floating
+ERROR -- Node N00832 is floating
+ERROR -- Node N00354 is floating
+ERROR -- Node N00243 is floating

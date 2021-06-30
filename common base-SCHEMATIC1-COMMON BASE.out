@@ -1,0 +1,86 @@
+
+**** 10/12/20 15:12:16 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-COMMON BASE"  [ D:\ae\common base-SCHEMATIC1-COMMON BASE.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "common base-SCHEMATIC1-COMMON BASE.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_VCC -2 30 1 
++ LIN V_VEE 0 5 1 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\common base-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING "common base-SCHEMATIC1.net" ****
+* source COMMON BASE
+V_VCC         N01636 0 0Vdc
+Q_Q3         VCB 0 VEB Q2N2222
+R_R5         VEB N01606  100k  
+R_R6         N01636 VCB  10k  
+V_VEE         0 N01606 0Vdc
+
+**** RESUMING "common base-SCHEMATIC1-COMMON BASE.sim.cir" ****
+.END
+
+**** 10/12/20 15:12:16 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-COMMON BASE"  [ D:\ae\common base-SCHEMATIC1-COMMON BASE.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE   22.010000E-12 
+         MJE     .377        
+         CJC    7.306000E-12 
+         MJC     .3416       
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

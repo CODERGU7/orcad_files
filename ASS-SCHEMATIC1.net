@@ -1,0 +1,8 @@
+* source ASS
+D_D3         0 N01290 Dbreak 
+D_D1         N01290 N01337 Dbreak 
+R_R1         0 N01337  1k  
+C_C3         0 N01337  47uF  
+C_C4         N01252 N01290  47uF  
+V_V1         N01252 0  
++SIN 0 10 50 0 0 0

@@ -1,0 +1,4 @@
+* source D
+D_D1         0 N00173 Dbreak 
+R_R1         N00200 N00173  1k  
+V_V1         N00200 0 10Vdc

@@ -1,0 +1,41 @@
+
+**** 10/05/20 12:22:57 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-ERA"  [ D:\ae\eadtest2-SCHEMATIC1-ERA.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "eadtest2-SCHEMATIC1-ERA.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\eadtest2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING eadtest2-SCHEMATIC1.net ****
+* source EADTEST2
+R_R8         N01881 N01520  8k  
+R_R9         N01795 N01829  10k  
+R_R10         0 N01829  40k  
+R_R11         N01657 N01520  1k  
+V_V2         N01881 0 8Vdc
+E_E2         0 N01795 N01520 N01657 120
+
+**** RESUMING eadtest2-SCHEMATIC1-ERA.sim.cir ****
+.END
+
+ERROR -- Less than 2 connections at node N01657

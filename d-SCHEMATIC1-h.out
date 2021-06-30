@@ -1,0 +1,62 @@
+
+**** 09/20/20 14:00:14 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-h"  [ D:\ae\d-schematic1-h.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "d-schematic1-h.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 10 0.1 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\d-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING d-SCHEMATIC1.net ****
+* source D
+D_D1         0 N00173 Dbreak 
+R_R1         N00200 N00173  1k  
+V_V1         N00200 0 10Vdc
+
+**** RESUMING d-schematic1-h.sim.cir ****
+.END
+
+**** 09/20/20 14:00:14 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-h"  [ D:\ae\d-schematic1-h.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

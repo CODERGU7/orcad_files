@@ -1,0 +1,6 @@
+* source BJT
+V_VBB         N00196 0 0Vdc
+R_R1         VCE N00180  1k  
+Q_Q2         VCE VBE 0 Q2N2222
+R_R2         N00196 VBE  100k  
+V_VCC         N00180 0 0Vdc

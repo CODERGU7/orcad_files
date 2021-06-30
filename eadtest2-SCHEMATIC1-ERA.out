@@ -1,0 +1,73 @@
+
+**** 10/05/20 20:11:28 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-ERA"  [ D:\ae\eadtest2-schematic1-era.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "eadtest2-schematic1-era.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\eadtest2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING eadtest2-SCHEMATIC1.net ****
+* source EADTEST2
+V_V1         N00187 0 24Vdc
+R_R1         N00187 N00411  20  
+R_R2         N00187 N00247  8  
+R_R3         0 N00411  5  
+R_R5         N00247 N00524  5  
+E_E1         N00524 0 N00411 0 10
+
+**** RESUMING eadtest2-schematic1-era.sim.cir ****
+.END
+
+**** 10/05/20 20:11:28 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-ERA"  [ D:\ae\eadtest2-schematic1-era.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00187)   24.0000 (N00247)   38.7690 (N00411)    4.8000 (N00524)   48.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         8.862E-01
+
+    TOTAL POWER DISSIPATION  -2.13E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

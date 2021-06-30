@@ -1,0 +1,5 @@
+* source EXP_RSERIES
+R_R1         N00127 N00157  1k  
+R_R2         N00157 N00184  2k  
+R_R3         N00184 0  3k  
+V_V1         N00127 0 10Vdc
